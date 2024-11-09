@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.Tool_Bar {
+  border: solid black 5px;
+  display: flex;
+  padding: 5px;
+  background-image: linear-gradient(to right, grey, #34c9eb);
+  color: white;
+}
+
+.Homie {
+  border: solid black 4px;
+  text-align: center;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, grey, #34c9eb);;
+  color: white;
+  display: absolute;
+}
+
+.us {
+  border: solid black 4px;
+  text-align: center;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, grey, #2db7d6)
+}
+
+.search {
+  border: solid black 4px;
+  text-align: center;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, grey, #139dbd)
+}
+
+.sell {
+  border: solid black 4px;
+  text-align: center;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, grey, #0e738a);
+  color: white;
+}
+
+.contact {
+  border: solid black 4px;
+  text-align: center;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, grey, #064c5c);
+  color: white;
+}
+
+.BA {
+  border: solid black 4px;
+  text-align: center;
+  padding: 5px;
+  background-image: linear-gradient(to bottom, grey, #012c36);
+  color: white;
+  display: absolute;
+  left: 5px;
+  top: 5px;
+}
