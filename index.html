@@ -3,24 +3,169 @@
 <head>
   <meta charset="UTF-8">
   <title>CS110</title>
+  
   <link href="style.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 
 <body>
 
-<div class="Tool_Bar">
-  <div class="Homie" onclick="">Homie</div>
-  <div class="us" onclick="">About Us</div>
-  <div class="search" onclick="">Home Search</div>
-  <div class="sell" onclick="">Sell Your Home</div>
-  <div class="contact" onclick="">Contact Us</div>
-  <div class="BA" onclick="">Before & After</div>
+
+
+
+
+  <div class="Tool_Bar">
+  
+  
+  
+  <div class="menu">
+  <button onclick="minimenu()" class="material-symbols-outlined">menu</button>
+  <div id="MenuDropdown" class="icon">
+    <div class="Homie2" onclick="newp('P_homie')">Homie</div>
+    <div class="us2" onclick="newp('P_us')">About</div>
+    <div class="search2" onclick="newp('P_search')">Search</div>
+    <div class="sell2" onclick="newp('P_sell')">Sell</div>
+    <div class="contact2" onclick="newp('P_contact')">Contact</div>
+    <div class="BA2" onclick="newp('P_BA')">B & A</div>
+  </div>
 </div>
 
-<div class="background">
 
 
+ 
+    
+    
+    <div class="Homie" onclick="newp('P_homie')">Homie</div>
+    <div class="us" onclick="newp('P_us')">About Us</div>
+    <div class="search" onclick="newp('P_search')">Home Search</div>
+    <div class="sell" onclick="newp('P_sell')">Sell Your Home</div>
+    <div class="contact" onclick="newp('P_contact')">Contact Us</div>
+    <div class="BA" onclick="newp('P_BA')">Before & After</div>
+    
+    
+  </div>
+  
+ <div class="background">
+
+    <div id="P_homie" style="display:block">
+      <div class="P1">
+        <div class="house">
+        
+         <img src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=600">
+         </div>
+      </div>
+    </div>
+    
+    <div id="P_us" style="display:none">
+      <div class="P2">
+        <div class="title">About Us</div>
+          <div class="subtitles">
+          <div class="shawn"><img src="https://images.sidearmdev.com/resize?url=https%3a%2f%2fdxbhsrqyrr690.cloudfront.net%2fsidearm.nextgen.sites%2fathletics.svu.edu%2fimages%2f2022%2f6%2f16%2fshawn_curtis_msoc_2021_22.jpg&width=300&type=webp"></div>Meet our CEO and founder</div>
+            <div class="text">Shawn Curtis</div>
+ <br>
+          <div class="subtitles">How and when did it all start?</div>
+              <div class="text">It all started Feb. 25th 2025 and it took a lot of hard work and sweat.</div>
+ <br>
+          <div class="subtitles">What is our goal?</div>
+            <div class="text">To make dream homes real homes. To make it more affordable and posible for people to live a comfortable life style for a reasonable price.</div>
+<br>
+          <div class="subtitles">How we try to give back and help the comunirty.</div>
+            <div class="text">Well its not real yet, but I would hope to be able to donate money, and to really improve the comunity and housing market.</div>
+        
+      </div>
+    </div>
+    
+    <div id="P_search" style="display:none">
+      <div class="P3">
+      <input id='myinput' type='search'/>
+      Find Your Next Home
+        <br>
+      <button onclick='getvalue()'>
+    Search
+    </button>
+
+    <div id='valuediv'>
+    Results pending
+    </div>
+      <div id="loading1" class="loading1"></div>
+      </div>
+    </div>
+    
+    <div id="P_sell" style="display:none">
+      <div class="P4"> 
+     We just need a few details before we know how we can help!
+      <br>
+      <br>
+        <div class="name">
+          First and Last Name
+            <br>
+          <input id='name' type='form'/>
+            <br>
+        </div>
+        <div class="adress">
+          Address of Home in Question
+            <br>
+          <input id='address' type='form'/>
+            <br>
+        </div>
+        <div class="c">
+          How would you like us to contact you?
+            <br>
+          <select name="c" id="c" onchange="selectChange()">
+            <option value="Call">Call</option>
+            <option value="Text">Text</option>
+            <option value="Email">Email</option>
+            <option value="Letter">Letter</option>
+          </select>
+        </div>
+        <div class="yourc">
+           Input according to selected contact (email/adress/number).
+             <br>
+          <input id='yourcontact' type='form'/>
+      </div>
+     </div>
+   </div>
+    
+    <div id="P_contact" style="display:none">
+      <div class="P5">
+      <div class="title">Contact Us</div>
+      <div class="subtitle">Call Us @: 555-555-5555</div>
+      <div class="subtitle">Email Us @:  <a href="mailto:wwwwwww.123@gmail.com">
+    wwwwwww.123@gmail.com</a></div>
+      </div>
+    </div>
+    
+    <div id="P_BA" style="display:none">
+      <div class="P6">
+      
+      
+      
+      
+      <div class="wrapper">
+   <div class="flip1">
+     <img src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600n">
+      <img src="">
+   </div>
+   <div class="flip3">
+      <img src="https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&w=600">
+      <img src="">
+   </div>
+   <div class="flip4">
+      <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=600">
+      <img src="">
+   </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+    </div>
 
 </div>
 
