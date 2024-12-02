@@ -68,6 +68,41 @@ body {
   color: white;
   flex: 1;
 }
+.BA:hover {
+  color: yellow;
+  transition: 1s;
+  font-size: 17px;
+}
+
+.Homie:hover {
+  color: yellow;
+  transition: 1s;
+  font-size: 17px;
+}
+
+.us:hover {
+  color: yellow;
+  transition: 1s;
+  font-size: 17px;
+}
+
+.search:hover {
+  color: yellow;
+  transition: 1s;
+  font-size: 17px;
+}
+
+.contact:hover {
+  color: yellow;
+  transition: 1s;
+  font-size: 17px;
+}
+
+.sell:hover {
+  color: yellow;
+  transition: 1s;
+  font-size: 17px;
+}
 
 .menu {
   display: none;
@@ -235,6 +270,7 @@ img {
    display: none;
 }
 
+
 .us {
    display: none;
 }
@@ -281,6 +317,12 @@ img {
 
 .icon div {
   color: black;
+  padding: 5px 10px;
+  display: block;
+}
+
+.icon div:hover {
+  background: grey;
   padding: 5px 10px;
   display: block;
 }
