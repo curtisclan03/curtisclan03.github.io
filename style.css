@@ -319,6 +319,7 @@ img {
   color: black;
   padding: 5px 10px;
   display: block;
+  width: 50px;
 }
 
 .icon div:hover {
